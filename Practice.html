@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width = device-width, initial-scale = 1.0">
+        <title>Bayern Munich</title>
+        <link rel="stylesheet" href="prac.css">
+        <link rel="icon" href="images.jpeg">
+        
+    </head>
+
+    <body>
+        <div class="containers">
+            <h2>Registration Form</h2>
+            <form name="myform" action="/submit" method="post" onsubmit="return validForm()">
+                <label for="name">Name:</label>
+                <input class="forms" type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input class="forms" type="email" id="email" name="email">
+
+                <label for="password">Password</label>
+                <input class="forms" type="password" id="password" name="password">
+
+                <div class="group">
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="country">Country:</label>
+                <select class="forms" id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="germany">Germany</option>
+                    <option value="canada">Canada</option>
+                    <option value="Norway">Norway</option>
+                </select>
+
+                <input class="submit" type="submit" value="Submit">
+            </form>
+
+            <h2>List</h2>
+            <div class="list-container">
+                <ul>
+                    <li>Enter your name</li>
+                    <li>enter your Email</li>
+                    <li>Enter yout Id</li>
+                    <li>Emter your Country</li>
+                </ul>
+
+                <ol>
+                    <li>Enter your name</li>
+                    <li>enter your Email</li>
+                    <li>Enter yout Id</li>
+                    <li>Emter your Country</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function validForm(){
+            let x = document.forms["myform"]["name"].value;
+            if (x == "") {
+                alert("Name must be filled out!");
+                return false;
+            }
+        }
+    </script>
+</html>

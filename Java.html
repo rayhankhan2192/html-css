@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Dom</h2>
+
+    <p id="demo"></p>
+    <p id="getData">petch the data by ID</p>
+
+    <p class="bytag">Get data by Tag</p>
+
+    <!--Event-->
+    <form name="myform" method="post" onsubmit="return validForm()">
+        <label for="name">Name:</label>
+        <input class="forms" type="text" id="name" name="name">
+        <input class="submit" type="submit" value="Submit"><br>
+    </form>
+    
+    <!--Event Listener-->
+    <button id="mybutton">Try Now</button>
+
+    <h3 id="datetime"></h3>
+</body>
+
+<script>
+    document.getElementById('demo').innerHTML = "Shitol ke putki mar";
+
+    const datas = document.getElementById("getData");
+    document.getElementById("demo").innerHTML = "This is the data: "+ datas.innerHTML;
+
+    const element = document.getElementsByTagName("p");
+
+    document.getElementById("demo").innerHTML = "This is the data by index is: " + element[2].innerHTML;
+
+    function validForm(){
+        let x = document.forms["myform"]["name"].value;
+        if (x == "") {
+            alert("Name must be filled out!");
+            return false;
+        }
+    }
+
+    //eventListerner
+    //regular
+    document.getElementById("mybutton").addEventListener("click", disPlayDate);
+    function disPlayDate(){
+        document.getElementById("datetime").innerHTML = Date();
+    }
+    //anonymous
+    const button = document.getElementById('mybutton');
+        button.addEventListener('click', function() {
+            alert('Button clicked with anonymous function!');
+        });
+    //arrow
+    const buttons = document.getElementById('mybutton');
+        buttons.addEventListener('click', () => {
+            alert('Button clicked with arrow function!');
+        });
+
+</script>
+</html>

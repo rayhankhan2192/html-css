@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .table-conttainer{
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table{
+            width: 60%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 15px;
+            text-align: left;
+            
+        }
+
+        th, td{
+            padding: 12px;
+            border: 1px solid black;
+        }
+        th{
+            background-color: aquamarine;
+            color:darkblue;
+        }
+
+        tr:nth-child(even){
+            background-color: burlywood;
+        }
+        tr:hover{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Table</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>ID</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rayhan Khan</td>
+                    <td>example@gmail.com</td>
+                    <td>234565434</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Rayhan Khan</td>
+                        <td>example@gmail.com</td>
+                        <td>234565434</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Rayhan Khan</td>
+                        <td>example@gmail.com</td>
+                        <td>234565434</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Rayhan Khan</td>
+                        <td>example@gmail.com</td>
+                        <td>234565434</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Rayhan Khan</td>
+                        <td>example@gmail.com</td>
+                        <td>234565434</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Rayhan Khan</td>
+                        <td>example@gmail.com</td>
+                        <td>234565434</td>
+                        <td>Germany</td>
+                    </tr>
+                </tr>
+                    <td>Rayhan Khan</td>
+                    <td>example@gmail.com</td>
+                    <td>234565434</td>
+                    <td>Germany</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

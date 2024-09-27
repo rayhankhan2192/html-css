@@ -1,0 +1,62 @@
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: red;
+}
+
+p{
+    color: black;
+}
+
+table{
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 20px;
+}
+
+td, th{
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color:blueviolet;
+}
+
+table, td, th{
+    border: 1px solid r ;
+}
+
+ul{
+    color: red;
+}
+ol{
+    color: cadetblue;
+}
+
+
+.city{
+    background-color: cadetblue;
+    color: whitesmoke;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+#country{
+    background-color: chocolate;
+    color: rebeccapurple;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.h22{
+    color: black;
+    background-color:coral;
+    padding-left: 45%;
+}
